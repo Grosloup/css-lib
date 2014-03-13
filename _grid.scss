@@ -32,3 +32,19 @@ $colSidePadding: 5px;
     }
   }
 }
+@mixin gridder($numPerRow:4, $margin:2%){
+
+  width: (100% - (($numPerRow - 1) * $margin)) / $numPerRow;
+  margin-bottom: $margin;
+  &:nth-child(n){
+    margin-right: $margin;
+  }
+  &:nth-child(#{$numPerRow}n){
+    margin-right: 0;
+  }
+  display: block;
+  float: left;
+  img{
+    max-width: 100%;
+  }
+}
