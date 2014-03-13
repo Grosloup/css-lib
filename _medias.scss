@@ -1,0 +1,37 @@
+.media-container{
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  img, iframe, object, embed{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &.r12{
+    padding-bottom: percentage(1/2);
+  }
+  &.r21{
+    padding-bottom: percentage(2);
+  }
+  &.r31{
+    padding-bottom: percentage(1/3);
+  }
+  &.r32{
+    padding-bottom: percentage(2/3);
+  }
+  &.r23{
+    padding-bottom: percentage(3/2);
+  }
+  &.r43{
+    padding-bottom: percentage(3/4);
+  }
+  &.r34{
+    padding-bottom: percentage(4/3);
+  }
+  &.r169{
+    padding-bottom: percentage(9/16);
+  }
+}
